@@ -1,6 +1,6 @@
 {
   "Finance": {
-    "Stocks": {
+    "Stocks": ["BEGIN_TRADING_HERE.txt"]
       "Tech": ["tech_stocks.txt", "BEGIN_TRADING_HERE.txt", "tech_analysis.txt"],
       "Energy": ["energy_stocks.txt"]
     },

@@ -48,14 +48,15 @@ function goBack() {
 }
 
 async function viewFile(file) {
-  let path = 'docs/' + currentPath.join('/') + '/' + file;
+  let basePath = 'docs/';
+  let fullPath = basePath + (currentPath.length > 0 ? currentPath.join('/') + '/' : '') + file;
   try {
-    const response = await fetch(path);
+    const response = await fetch(fullPath);
     if (!response.ok) {
       throw new Error('File not found');
     }
     const content = await response.text();
-    appendOutput(`Content of ${path}:\n${content}\n`);
+    appendOutput(`Content of ${fullPath}:\n${content}\n`);
   } catch (error) {
     appendOutput(`Error: ${error.message}\n`);
   }

@@ -3,13 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Knowledge Terminal</title>
-  <link rel="stylesheet" href="style.css">
+  <title><!-- Insert site title here --></title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin-right: 20px;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 20px;
+    }
+    .project {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    footer {
+      background-color: #f0f0f0;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-  <div id="terminal">
-    <div id="output"></div>
-  </div>
-  <script src="script.js"></script>
+  <!-- 
+    Instructions:
+    - Replace <!-- Insert ... here --> with your own content.
+    - For navigation, duplicate the <li> tags and update the href and text.
+    - For projects, copy the <div class="project"> block, paste it, and fill in the details.
+    - Use your own image URLs and descriptions in <img> tags.
+    - Add or remove sections as needed.
+  -->
+  <header>
+    <h1><!-- Insert site title here --></h1>
+    <nav>
+      <ul>
+        <li><a href="<!-- Insert link here -->"><!-- Insert link text here --></a></li>
+        <!-- Duplicate this <li> tag for additional navigation items -->
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+      <h2>About</h2>
+      <p><!-- Insert about text here --></p>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects">
+        <div class="project">
+          <img src="<!-- Insert image URL here -->" alt="<!-- Insert image description here -->">
+          <h3><!-- Insert project title here --></h3>
+          <p><!-- Insert project description here --></p>
+          <p>Categories: <!-- Insert categories here, separated by commas --></p>
+          <a href="<!-- Insert project link here -->">View Project</a>
+        </div>
+        <!-- Duplicate this <div class="project"> block for additional projects -->
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p><!-- Insert contact information here --></p>
+    </section>
+  </main>
+  <footer>
+    <p><!-- Insert footer text here --></p>
+  </footer>
 </body>
 </html>
